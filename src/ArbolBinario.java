@@ -1,6 +1,8 @@
 //4 - Implementar la clase Arbol Binario con los 3 recorridos básicos (inOrden, preOrden y postOrden)
+
+
 /*
-presenta un nodo en el árbol binario. Cada nodo tiene tres atributos:
+Nodo en el árbol binario. Cada nodo tiene tres atributos:
 valor: Almacena el valor del nodo
 izquierda: Referencia al nodo hijo izquierdo.
 derecha: Referencia al nodo hijo derecho.

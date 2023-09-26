@@ -1,4 +1,4 @@
-// Implementar las clases Pila y Fila sin utilizar Collections
+//3 Implementar las clases Pila y Fila sin utilizar Collections
 
 public class FilaSinCollection {
     private int[] elementos;

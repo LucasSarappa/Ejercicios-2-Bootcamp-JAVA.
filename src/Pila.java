@@ -1,11 +1,11 @@
-// Implementar la clase Pila (Utilizando una Collection que no implemente la interfaz Queue / Deque)
+// 1 Implementar la clase Pila (Utilizando una Collection que no implemente la interfaz Queue / Deque)
 
 import java.util.ArrayList;
 
 public class Pila<T> {
 
     public static void main(String[] args) {
-        Pila<Integer> pila = new Pila<>(5);
+        Pila<Integer> pila = new Pila<>();
         pila.push(6);
         pila.push(2);
         pila.push(10);
@@ -28,7 +28,7 @@ public class Pila<T> {
 
     private ArrayList<T> elementos;
 
-    public Pila(int i) {
+    public Pila() {
         elementos = new ArrayList<T>();
     }
 

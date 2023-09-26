@@ -1,12 +1,7 @@
 En cuanto al rendimiento, en términos generales, la implementación iterativa es más eficiente que la implementación recursiva
 debido a que no requiere una llamada recursiva para cada número consecutivo. La implementación iterativa utiliza un bucle mientras
-que la recursiva crea una nueva llamada de función para cada número consecutivo. Sin embargo, en la práctica, la diferencia de
-rendimiento será mínima para valores pequeños de entrada.
+que la recursiva crea una nueva llamada de función para cada número consecutivo.
 
-Para valores grandes de entrada, la implementación recursiva puede llevar a un desbordamiento de la pila (stack overflow)
-si no se optimiza adecuadamente, mientras que la implementación iterativa generalmente no sufre de este problema.
+En la práctica, la diferencia derendimiento será mínima para valores pequeños de entrada, pero para valores grandes de entrada,
+la implementación recursiva puede llevar a un desbordamiento de la pila si no se optimiza adecuadamente.
 Por lo tanto, en términos de rendimiento y eficiencia, la implementación iterativa es preferible en la mayoría de los casos.
-
-En resumen, la implementación iterativa es más eficiente y segura en términos de rendimiento, especialmente para valores
-grandes de entrada. La implementación recursiva es más sencilla de entender pero puede llevar a problemas de rendimiento
-y desbordamiento de pila para entradas grandes.

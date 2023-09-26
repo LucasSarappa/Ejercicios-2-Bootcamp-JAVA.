@@ -1,4 +1,4 @@
-// Implementar las clases Pila y Fila sin utilizar Collections
+// 3 Implementar las clases Pila y Fila sin utilizar Collections
 
 public class PilaSinCollection {
     private int maxSize;
@@ -7,15 +7,15 @@ public class PilaSinCollection {
 
     public static void main(String[] args) {
 
-        PilaSinCollection pila = new PilaSinCollection(4); // creo una pila de 5 elementos a partir de PilaSinCollection
+        PilaSinCollection pila = new PilaSinCollection(3); // creo una pila de 3 elementos a partir de PilaSinCollection
 
         try {
             pila.push(6);
             pila.push(2);
             pila.push(10);
             /*
-            pila.push(1); // Esto lanzará una excepción ya que supera el tamaño de la pila establecido de 5 elementos
-             */
+            pila.push(1); // Esto lanzará una excepción ya que supera el tamaño de la pila establecido de 3 elementos
+            */
 
         } catch (IllegalStateException e) {
             System.out.println(e.getMessage());
