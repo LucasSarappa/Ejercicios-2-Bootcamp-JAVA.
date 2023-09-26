@@ -5,10 +5,12 @@ import java.util.ArrayList;
 public class Pila<T> {
 
     public static void main(String[] args) {
-        Pila<Integer> pila = new Pila<>();
+        Pila<Integer> pila = new Pila<>(5);
         pila.push(6);
         pila.push(2);
         pila.push(10);
+
+        System.out.print("Pila con Collection sin Queue/Deque: ");
 
         System.out.print("Elementos de la pila: --> ");
         pila.print();
@@ -26,7 +28,7 @@ public class Pila<T> {
 
     private ArrayList<T> elementos;
 
-    public Pila() {
+    public Pila(int i) {
         elementos = new ArrayList<T>();
     }
 

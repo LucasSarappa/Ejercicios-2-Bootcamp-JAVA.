@@ -1,8 +1,30 @@
+// Implementar la clase Fila (Utilizando una Collection que no implemente la interfaz Queue / Deque)
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Fila<T> {
     private List<T> elementos = new ArrayList<>();
+
+    public static void main(String[] args) {
+        Fila<Integer> fila = new Fila<>();
+        fila.encolar(6);
+        fila.encolar(2);
+        fila.encolar(10);
+
+        System.out.print("Fila con Collection sin Queue/Deque: ");
+
+        System.out.print("Elementos de la fila: --> ");
+        fila.print();
+
+        System.out.println("Tamaño de la fila --> " + fila.size() + " elementos");
+        System.out.println("Primer elemento de la fila: " + fila.frente());
+
+        System.out.println("--Desencolando elementos:--");
+        while (!fila.isEmpty()) {
+            System.out.println("Desencolado: " + fila.desencolar());
+        }
+    }
 
     public void encolar(T elemento) {
         elementos.add(elemento);
@@ -37,21 +59,5 @@ public class Fila<T> {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        Fila<Integer> fila = new Fila<>();
-        fila.encolar(6);
-        fila.encolar(2);
-        fila.encolar(10);
 
-        System.out.print("Elementos de la fila: --> ");
-        fila.print();
-
-        System.out.println("Tamaño de la fila --> " + fila.size() + " elementos");
-        System.out.println("Primer elemento de la fila: " + fila.frente());
-
-        System.out.println("--Desencolando elementos:--");
-        while (!fila.isEmpty()) {
-            System.out.println("Desencolado: " + fila.desencolar());
-        }
-    }
 }
