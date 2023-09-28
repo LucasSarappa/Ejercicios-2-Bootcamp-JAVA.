@@ -4,24 +4,24 @@ import java.util.List;
 
 public class SumaConsecutiva {
 
-    public static boolean esSumatoriaDeConsecutivos(int value) {
-        return esSumatoriaDeConsecutivosRecursivo(value, 1, new ArrayList<>());
+    public static boolean esSumatoriaDeConsecutivos(int valor) {
+        return esSumatoriaDeConsecutivosRecursivo(valor, 1, new ArrayList<>());
     }
 
-    private static boolean esSumatoriaDeConsecutivosRecursivo(int value, int current, List<Integer> consecutivos) {
-        if (value == 0) {
-            // Hemos encontrado una suma de consecutivos
+    private static boolean esSumatoriaDeConsecutivosRecursivo(int valor, int actual, List<Integer> consecutivos) {
+        if (valor == 0) {
+            // Existe la suma de consecutivos
             imprimirListaConsecutivos(consecutivos);
             return true;
         }
-        if (value < 0 || current > value) {
-            // No es posible encontrar una suma de consecutivos
+        if (valor < 0 || actual > valor) {
+            // No existe la suma de consecutivos
             return false;
         }
 
         // Intentamos con el siguiente número consecutivo
-        consecutivos.add(current);
-        return esSumatoriaDeConsecutivosRecursivo(value - current, current + 1, consecutivos);
+        consecutivos.add(actual);
+        return esSumatoriaDeConsecutivosRecursivo(valor - actual, actual + 1, consecutivos);
     }
 
     private static void imprimirListaConsecutivos(List<Integer> consecutivos) {

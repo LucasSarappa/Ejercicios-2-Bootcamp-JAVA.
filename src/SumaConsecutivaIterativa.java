@@ -4,19 +4,19 @@ import java.util.List;
 
 public class SumaConsecutivaIterativa {
 
-    public static boolean esSumatoriaDeConsecutivos(int value) {
+    public static boolean esSumatoriaDeConsecutivos(int valor) {
         List<Integer> consecutivos = new ArrayList<>();
-        int current = 1;
-        while (value > 0) {
-            if (value >= current) {
-                consecutivos.add(current);
-                value -= current;
-                current++;
+        int actual = 1;
+        while (valor > 0) {
+            if (valor >= actual) {
+                consecutivos.add(actual);
+                valor -= actual;
+                actual++;
             } else {
                 break;
             }
         }
-        if (value == 0) {
+        if (valor == 0) {
             imprimirListaConsecutivos(consecutivos);
             return true;
         } else {
